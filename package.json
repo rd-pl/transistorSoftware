@@ -1,0 +1,56 @@
+{
+  "name": "Pointlook",
+  "version": "0.0.6",
+  "private": true,
+  "scripts": {
+    "start": "echo 8000 > ./PORT;./node_modules/react-native-cli/index.js start --port `/bin/cat ./PORT`",
+    "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean",
+    "allclean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build/ModuleCache/* && rm -rf node_modules/ && npm cache clean && npm i"
+  },
+  "dependencies": {
+    "buffer": "^5.0.2",
+    "firebase": "^3.6.5",
+    "lodash": "^4.17.4",
+    "pouchdb-adapter-react-native-sqlite": "^1.0.1",
+    "pouchdb-react-native": "^6.1.25",
+    "react": "15.3.2",
+    "react-native": "^0.35.0",
+    "react-native-action-button": "^2.0.20",
+    "react-native-background-geolocation-android": "git+ssh://git@github.com/transistorsoft/react-native-background-geolocation-android.git#2.3.1",
+    "react-native-device-info": "^0.9.7",
+    "react-native-drawer": "^2.3.0",
+    "react-native-facebook-account-kit": "^0.5.2",
+    "react-native-local-mongodb": "^1.8.2",
+    "react-native-mapbox-gl": "^5.1.0",
+    "react-native-modalbox": "^1.3.8",
+    "react-native-openpgp": "^1.0.1",
+    "react-native-responsive-image": "^2.0.1",
+    "react-native-router-flux": "^3.37.0",
+    "react-native-rsa": "0.0.3",
+    "react-native-sqlite-storage": "^3.1.3",
+    "react-native-vector-icons": "^3.0.0",
+    "react-native-workers": "git+https://github.com/alex2006hw/react-native-workers.git",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "devDependencies": {
+    "autobind-decorator": "^1.3.4",
+    "babel-jest": "18.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-react-native": "1.9.1",
+    "cfenv": "^1.0.3",
+    "eslint-config-rallycoding": "^3.2.0",
+    "jest": "18.1.0",
+    "jest-react-native": "18.0.0",
+    "react-native-cli": "^2.0.1",
+    "react-test-renderer": "15.3.2"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  }
+}
